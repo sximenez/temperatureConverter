@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convert Celsius to Fahrenheit</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/b67aea6e6e.js" crossorigin="anonymous"></script>
+
+  <style>
+    /* Remove input arrows in Chrome, Safari, Edge, Opera */
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    /* Remove input arrows in Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    .guide {
+      border: 1px solid red;
+    }
+
+    .font-main {
+      font-family: 'Inconsolata', sans-serif;
+    }
+
+    @media (max-width: 767px) {
+      .phone {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .md\:phone {
+        width: 375px;
+        height: 667px;
+      }
+    }
+
+    .icon-color1 {
+      color: gray;
+    }
+
+    .icon-color2 {
+      color: white;
+    }
+  </style>
+
+</head>
+
+<body class="h-screen flex items-center justify-center">
+
+  <!-- WRAPPER -->
+  <div class="phone md:phone bg-transparent flex flex-col justify-between phone relative">
+
+    <!-- BACKGROUND IMAGE -->
+    <div
+      style="background-image: url(images/pexels-pixabay-53594.jpg); background-size: cover; filter: brightness(35%); box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;"
+      class="phone md:phone absolute top-0 left-0 rounded-xl"></div>
+
+    <!-- TOP PART OF WRAPPER -->
+    <div id="top" class="flex flex-col z-10">
+
+      <!-- CELSIUS INPUT BAR -->
+      <div class="h-14 mt-5 mb-10 flex items-center mx-4 px-4 rounded bg-white">
+
+        <i class="fa-solid fa-bars text-left fa-gray icon-color1"></i>
+        <input type="number" placeholder="Celsius temperature" class="grow mx-8 focus:outline-none">
+        <i class="fa-sharp fa-solid fa-ellipsis-vertical text-right icon-color1"></i>
+
+      </div>
+
+      <!-- ACTION BUTTONS  -->
+      <div class="flex justify-center gap-x-4">
+
+        <input type="button" value="Convert"
+          class="w-20 text-white border border-solid border-white rounded p-2">
+        <input type="reset" value="Reset"
+          class="w-20 text-white border border-solid border-white rounded p-2">
+
+      </div>
+
+    </div>
+
+    <!-- MIDDLE PART OF WRAPPER -->
+    <div id="bottom" class="z-10">
+
+      <input type="number" class="w-full text-8xl text-white bg-transparent text-center" disabled>
+
+      <form class="flex flex-col hidden" action="#" method="get">
+
+        <input type="number" id="cel" placeholder="celsius">
+        <input type="number" id="far">
+        <input type="button" id="convert" value="convert">
+        <input type="reset" id="reset" value="reset">
+
+      </form>
+
+    </div>
+
+    <!-- BOTTOM PART OF WRAPPER -->
+
+    <div class="h-20 flex items-center justify-between icon-color2 mx-14 px-4 z-10">
+
+      <i class="fa-solid fa-chevron-left"></i>
+      <i class="fa-regular fa-square"></i>
+      <i class="fa-solid fa-chevron-right"></i>
+
+    </div>
+
+  </div>
+
+  <script href="app.js"></script>
+
+</body>
+
+</html>
