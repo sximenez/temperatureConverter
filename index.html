@@ -77,7 +77,13 @@
       <div class="h-14 mt-5 mb-10 flex items-center mx-4 px-4 rounded bg-white">
 
         <i class="fa-solid fa-bars text-left fa-gray icon-color1"></i>
-        <input type="number" placeholder="Celsius temperature" class="grow mx-8 focus:outline-none">
+
+        <form action="#" method="get" id="form1">
+
+          <input type="number" id="cel" placeholder="Celsius temperature" class="grow mx-8 focus:outline-none">
+
+        </form>
+
         <i class="fa-sharp fa-solid fa-ellipsis-vertical text-right icon-color1"></i>
 
       </div>
@@ -85,10 +91,12 @@
       <!-- ACTION BUTTONS  -->
       <div class="flex justify-center gap-x-4">
 
-        <input type="button" value="Convert"
-          class="w-20 text-white border border-solid border-white rounded p-2">
-        <input type="reset" value="Reset"
-          class="w-20 text-white border border-solid border-white rounded p-2">
+        <form action="#" method="get" id="form2">
+
+          <input type="button" id="convert" value="Convert" class="w-20 text-white border border-solid border-white rounded p-2">
+          <input type="reset" id="reset" value="Reset" class="w-20 text-white border border-solid border-white rounded p-2">
+
+        </form>
 
       </div>
 
@@ -97,14 +105,9 @@
     <!-- MIDDLE PART OF WRAPPER -->
     <div id="bottom" class="z-10">
 
-      <input type="number" class="w-full text-8xl text-white bg-transparent text-center" disabled>
-
-      <form class="flex flex-col hidden" action="#" method="get">
-
-        <input type="number" id="cel" placeholder="celsius">
-        <input type="number" id="far">
-        <input type="button" id="convert" value="convert">
-        <input type="reset" id="reset" value="reset">
+      <form action="#" method="get" id="form3">
+      
+        <input type="number" id="far" class="w-full text-8xl text-white bg-transparent text-center" disabled>
 
       </form>
 
@@ -122,7 +125,7 @@
 
   </div>
 
-  <script href="app.js"></script>
+  <script href="#"></script>
 
 </body>
 
