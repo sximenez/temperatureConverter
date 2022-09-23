@@ -80,7 +80,7 @@
 
         <form action="#" method="get" id="form1">
 
-          <input type="number" id="cel" placeholder="Celsius temperature" class="grow mx-8 focus:outline-none">
+          <input type="number" id="input" placeholder="Temperature" class="grow mx-8 focus:outline-none">
 
         </form>
 
@@ -93,8 +93,9 @@
 
         <form action="#" method="get" id="form2">
 
-          <input type="button" id="convert" value="Convert" class="w-20 text-white border border-solid border-white rounded p-2">
-          <input type="reset" id="reset" value="Reset" class="w-20 text-white border border-solid border-white rounded p-2">
+          <input type="button" id="cel" value="C to F" class="w-20 text-white border border-solid border-white rounded p-2">
+          <input type="button" id="far" value="F to C" class="w-20 text-white border border-solid border-white rounded p-2">
+          <input form="form1" type="reset" id="reset" value="Reset" class="w-20 text-white border border-solid border-white rounded p-2">
 
         </form>
 
@@ -103,11 +104,11 @@
     </div>
 
     <!-- MIDDLE PART OF WRAPPER -->
-    <div id="bottom" class="z-10">
+    <div id="bottom" class="pb-5 z-10">
 
       <form action="#" method="get" id="form3">
       
-        <input type="number" id="far" class="w-full text-8xl text-white bg-transparent text-center" disabled>
+        <input type="number" id="output" class="w-full text-8xl text-white bg-transparent text-center" disabled>
 
       </form>
 
@@ -125,7 +126,7 @@
 
   </div>
 
-  <script href="#"></script>
+  <script src="app.js"></script>
 
 </body>
 
