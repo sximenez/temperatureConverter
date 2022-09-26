@@ -5,7 +5,7 @@
 
 The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
 
-The **html** is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
+The **HTML** is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
 
 The **CSS** is based on the Tailwind framework.
 
