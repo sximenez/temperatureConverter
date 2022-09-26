@@ -1,6 +1,6 @@
 # Smartphone-like temperature conversion form
 
-=> https://sximenez.github.io/temperatureConverter/
+✅ https://sximenez.github.io/temperatureConverter/
 
 
 The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
@@ -9,7 +9,7 @@ The **html** is divided in three main wrappers with an input and action buttons 
 
 The **CSS** is based on the Tailwind framework.
 
-For **JS**, I wrote two functions using an event "click", one for to convert from Celsius:
+For **JS**, I wrote two functions using an event "click", one to convert from Celsius:
 
 ```Javascript
 convertFromCelsius.addEventListener("click",
