@@ -3,7 +3,7 @@
 ✅ https://sximenez.github.io/temperatureConverter/
 
 
-The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
+The **IDEA** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
 
 The **HTML** is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
 
