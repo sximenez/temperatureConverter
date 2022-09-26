@@ -1,6 +1,7 @@
 # Smartphone-like temperature conversion form
 
-https://sximenez.github.io/temperatureConverter/
+=> https://sximenez.github.io/temperatureConverter/
+
 
 The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
 
