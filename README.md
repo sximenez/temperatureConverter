@@ -3,13 +3,13 @@
 ✅ https://sximenez.github.io/temperatureConverter/
 
 
-The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
+The ```idea``` was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
 
-The **html** is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
+The ```html``` is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
 
-The **css** is based on the Tailwind framework.
+The ```css``` is based on the Tailwind framework.
 
-For **js**, I wrote two functions using an event "click", one to convert from Celsius:
+For ```js```, I wrote two functions using an event "click", one to convert from Celsius:
 
 ```Javascript
 convertFromCelsius.addEventListener("click",
