@@ -1,7 +1,7 @@
-# Fun project involving simple JS to create a temperature conversion form
+# Smartphone-like temperature conversion form
 <br>
 https://sximenez.github.io/temperatureConverter/
-<br><br>
+<br>
 The **idea** was to imitate a smartphone app converting temperature from Celsius to/from Fahrenheit.
 <br>
 The **html** is divided in three main wrappers with an input and action buttons on top, and the output in the middle.
