@@ -6,13 +6,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Convert Celsius to Fahrenheit</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <title>temperatureConverter</title>
+
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     /* Remove input arrows in Chrome, Safari, Edge, Opera */
@@ -26,65 +28,35 @@
     input[type=number] {
       -moz-appearance: textfield;
     }
-
-    .guide {
-      border: 1px solid red;
-    }
-
-    .font-main {
-      font-family: 'Inconsolata', sans-serif;
-    }
-
-    @media (max-width: 767px) {
-      .phone {
-        width: 100%;
-        height: 100%;
-      }
-    }
-
-    @media (min-width: 768px) {
-      .md\:phone {
-        width: 375px;
-        height: 667px;
-      }
-    }
-
-    .icon-color1 {
-      color: gray;
-    }
-
-    .icon-color2 {
-      color: white;
-    }
   </style>
 
 </head>
 
-<body class="h-screen flex items-center justify-center">
+<body class="h-screen flex items-center justify-center min-w-[320px]">
 
   <!-- WRAPPER -->
-  <div class="phone md:phone bg-transparent flex flex-col justify-between phone relative">
+  <div class="w-full h-full md:w-[375px] md:h-[667px] bg-transparent flex flex-col justify-between relative">
 
     <!-- BACKGROUND IMAGE -->
     <div
       style="background-image: url(images/pexels-pixabay-53594.jpg); background-size: cover; filter: brightness(35%); box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;"
-      class="phone md:phone absolute top-0 left-0 rounded-xl"></div>
+      class="w-full h-full md:w-[375px] md:h-[667px] absolute top-0 left-0 md:rounded-xl"></div>
 
     <!-- TOP PART OF WRAPPER -->
     <div id="top" class="flex flex-col z-10">
 
       <!-- CELSIUS INPUT BAR -->
-      <div class="h-14 mt-5 mb-10 flex items-center mx-4 px-4 rounded bg-white">
+      <div class="h-14 mt-5 mb-10 flex items-center justify-between mx-4 px-4 rounded bg-white">
 
-        <i class="fa-solid fa-bars text-left fa-gray icon-color1"></i>
+        <i class="fa-solid fa-bars text-left fa-gray text-[#808080]"></i>
 
-        <form action="#" method="get" id="form1">
+        <form action="#" method="get" id="form1" class="w-full pl-4">
 
-          <input type="number" id="input" placeholder="Temperature" class="pl-4 pr-24 focus:outline-none">
+          <input type="number" id="input" placeholder="Temperature" class="focus:outline-none">
 
         </form>
 
-        <i class="fa-sharp fa-solid fa-ellipsis-vertical text-right icon-color1"></i>
+        <i class="fa-sharp fa-solid fa-ellipsis-vertical text-right text-[#808080]"></i>
 
       </div>
 
@@ -93,9 +65,12 @@
 
         <form action="#" method="get" id="form2">
 
-          <input type="button" id="cel" value="C to F" class="w-20 text-white border border-solid border-white rounded p-2">
-          <input type="button" id="far" value="F to C" class="w-20 text-white border border-solid border-white rounded p-2">
-          <input form="form1" type="reset" id="reset" value="Reset" class="w-20 text-white border border-solid border-white rounded p-2">
+          <input type="button" id="cel" value="C to F"
+            class="w-20 text-white border border-solid border-white rounded p-2 cursor-pointer">
+          <input type="button" id="far" value="F to C"
+            class="w-20 text-white border border-solid border-white rounded p-2 cursor-pointer">
+          <button form="form1" type="reset" id="reset"
+            class="w-20 text-white border border-solid border-white rounded p-2 cursor-pointer">Reset</button>
 
         </form>
 
@@ -106,17 +81,13 @@
     <!-- MIDDLE PART OF WRAPPER -->
     <div id="bottom" class="pb-5 z-10">
 
-      <form action="#" method="get" id="form3">
-      
-        <input type="number" id="output" class="w-full text-8xl text-white bg-transparent text-center" disabled>
-
-      </form>
+      <input type="number" id="output" class="w-full text-8xl text-white bg-transparent text-center" disabled>
 
     </div>
 
     <!-- BOTTOM PART OF WRAPPER -->
 
-    <div class="h-20 flex items-center justify-between icon-color2 mx-14 px-4 z-10">
+    <div class="h-20 flex items-center justify-between text-white mx-14 px-4 z-10">
 
       <i class="fa-solid fa-chevron-left"></i>
       <i class="fa-regular fa-square"></i>
